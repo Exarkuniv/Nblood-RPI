@@ -1,7 +1,7 @@
 # Nblood-RPI
 Blood for Raspberry Pi
 
-![Nblood-RPI](https://github.com/Exarkuniv/Nblood-RPI/blob/master/Screenshots/blood-1.png)
+![Nblood-RPI](https://github.com/Exarkuniv/Nblood-RPI/blob/Master/Screenshots/blood-1.png)
 
 Thanks to Nuke.YKT source port of Blood it is possible to build and install Blood and Cryptic Passage
 on Raspberry Pi and RetroPie
