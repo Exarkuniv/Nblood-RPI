@@ -60,9 +60,9 @@ function install_Nblood() {
 }
 	
 function configure_Nblood() {
-	mkdir "$home/.config/nblood"
-	cp -v settings.cfg "$home/.config/nblood"
-	cp -v nblood.cfg "$home/.config/nblood"
+	mkdir "$home/.config/Nblood"
+	cp -v settings.cfg "$home/.config/Nblood"
+	cp -v nblood.cfg "$home/.config/Nblood"
 	
 	mkRomDir "ports/Nblood"
 	mkRomDir "ports/Nblood/CP"
