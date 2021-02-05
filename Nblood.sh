@@ -65,10 +65,10 @@ function configure_Nblood() {
 	cp -v nblood.cfg "$home/.config/nblood"
 	
 	mkRomDir "ports/Nblood"
-	mkRomDir "ports/Nblood/CP"
+	#mkRomDir "ports/Nblood/CP"
 	
 	addPort "$md_id" "nblood" "Nblood - Blood source port" "$md_inst/nblood  -j=/home/pi/RetroPie/roms/ports/Nblood"	
-	addPort "$md_id" "nblood" "Nblood - Cryptic Passage " "$md_inst/nblood -ini CRYPTIC.INI -j=/home/pi/RetroPie/roms/ports/Nblood/CP"
+	#addPort "$md_id" "nblood" "Nblood - Cryptic Passage " "$md_inst/nblood -ini CRYPTIC.INI -j=/home/pi/RetroPie/roms/ports/Nblood/CP"
 	
 
 }
