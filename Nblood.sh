@@ -9,7 +9,7 @@
 # at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
 #
 
-rp_module_id="Nblood"
+rp_module_id="nblood"
 rp_module_desc="Nblood - Blood source port"
 rp_module_licence="GPL3 https://github.com/OpenMW/osg/blob/3.4/LICENSE.txt"
 rp_module_help="you need to put the 
@@ -35,22 +35,22 @@ rp_module_section="exp"
 rp_module_flags=""
 
 
-function depends_Nblood() {
+function depends_nblood() {
    getDepends cmake build-essential build-essential nasm libgl1-mesa-dev libglu1-mesa-dev libsdl1.2-dev libsdl-mixer1.2-dev libsdl2-dev libsdl2-mixer-dev flac libflac-dev libvorbis-dev libvpx-dev libgtk2.0-dev freepats
   
 }
 
-function sources_Nblood() {
+function sources_nblood() {
 	gitPullOrClone "$md_build" https://github.com/Exarkuniv/NBlood.git
 }
 
-function build_Nblood() {
+function build_nblood() {
     cd $md_build
    make blood
 	md_ret_require="$md_build"
 }
 
-function install_Nblood() {
+function install_nblood() {
     md_ret_files=(        
         'nblood'
 		'nblood.pk3'
@@ -59,7 +59,7 @@ function install_Nblood() {
     )
 }
 	
-function configure_Nblood() {
+function configure_nblood() {
 	mkdir "$home/.config/nblood"
 	cp -v settings.cfg "$home/.config/nblood"
 	cp -v nblood.cfg "$home/.config/nblood"
@@ -67,7 +67,7 @@ function configure_Nblood() {
 	mkRomDir "ports/Nblood"
 	#mkRomDir "ports/Nblood/CP"
 	
-	addPort "$md_id" "nblood" "Nblood - Blood source port" "$md_inst/nblood  -j=/home/pi/RetroPie/roms/ports/Nblood"	
+	addPort "$md_id" "nblood" "Nblood - Blood source port" "$md_inst/nblood  -j=/home/pi/RetroPie/roms/ports/nblood"	
 	#addPort "$md_id" "nblood" "Nblood - Cryptic Passage " "$md_inst/nblood -ini CRYPTIC.INI -j=/home/pi/RetroPie/roms/ports/Nblood/CP"
 	
 
