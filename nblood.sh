@@ -36,7 +36,7 @@ rp_module_flags=""
 
 
 function depends_nblood() {
-   getDepends cmake xorg matchbox-window-manager x11-xserver-utils xinit build-essential build-essential nasm libgl1-mesa-dev libglu1-mesa-dev libsdl1.2-dev libsdl-mixer1.2-dev libsdl2-dev libsdl2-mixer-dev flac libflac-dev libvorbis-dev libvpx-dev libgtk2.0-dev freepats
+   getDepends cmake xorg xinit x11-xserver-utils xinit build-essential build-essential nasm libgl1-mesa-dev libglu1-mesa-dev libsdl1.2-dev libsdl-mixer1.2-dev libsdl2-dev libsdl2-mixer-dev flac libflac-dev libvorbis-dev libvpx-dev libgtk2.0-dev freepats
   
 }
 
@@ -54,15 +54,15 @@ function install_nblood() {
     md_ret_files=(        
         'nblood'
 		'nblood.pk3'
-		'settings.cfg'
 		'nblood.cfg'
     )
 }
 	
 function configure_nblood() {
 	mkdir "$home/.config/nblood"
-	cp -v settings.cfg "$home/.config/nblood"
+	
 	cp -v nblood.cfg "$home/.config/nblood"
+	chown -R pi:pi "$home/.config/nblood"
 	
 	mkRomDir "ports/nblood"
 	mkRomDir "ports/nblood/CP"
