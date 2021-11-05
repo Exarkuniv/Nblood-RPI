@@ -46,7 +46,7 @@ function sources_nblood() {
 
 function build_nblood() {
     cd $md_build
-   make blood USE_OPENGL=0 STARTUP_WINDOW=0
+   make blood USE_OPENGL=1 STARTUP_WINDOW=0
 	md_ret_require="$md_build"
 }
 
