@@ -19,4 +19,6 @@ For support and help you can contact me here or on RetroPie forums.
 
 To install
 
-`wget https://raw.githubusercontent.com/Exarkuniv/Nblood-RPI/Master/nblood.sh -P $HOME/RetroPie-Setup/scriptmodules/ports/`
+```
+wget https://raw.githubusercontent.com/Exarkuniv/Nblood-RPI/Master/nblood.sh -P $HOME/RetroPie-Setup/scriptmodules/ports/
+```
